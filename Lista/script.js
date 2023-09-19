@@ -88,29 +88,28 @@ function mudaConstante(){
     
     nome = novoNome; 
   }
+
 function manipulaArrays(){
-    let cores = ["branco", "azul", "vermelho", "verde", "preto", "amarelo", "marrom", "violeta", "rosa", "ciano", "magenta", "cinza"]
+    var cores = [ "branco", "azul", "vermelho", "verde", "preto", "amarelo", "marrom", "violeta", "rosa", "ciano", "magenta", "cinza" ]
+    cores.push("laranja")
     console.log(cores)
-    cores.push("Laranja")
-    console.log("Novo Console.log depois do push no laranja: ")
-    console.log(cores)
-    cores.pop()
-    console.log("Novo Console.log depois do Pop: ")
-    console.log(cores)
-    //cores.sort()
-    //console.log("Novo Console.log em Ordem Alfabética: ")
-    //console.log(cores)
-    cores.splice(1, 1)
-    console.log("Novo Console.log com Splice: ")
-    console.log(cores)
-    let lenght = cores.length;
-    console.log(lenght)
+    let crRm = cores.pop()
+    console.log('Elemento removido: ', crRm)
+    console.log('Array: ', cores)
+    let orAr = cores.sort()
+    console.log('Array organizado: ', orAr)
+    let rmAz = cores.splice(cores.indexOf("azul"), 1)
+    console.log('Array sem azul: ', cores)
+    console.log('Primeiro valor do array:', cores[0])
+    console.log('Último valor do array:', cores[cores.length - 1])
     cores.unshift("fucsia")
-    console.log(cores)
-    let primeiraCor = cores.shift()
-    console.log(cores)
-   
+    console.log('Array com fucsia: ', cores)
+    let crSh = cores.shift();
+    console.log('Elemento removido pelo shift: ', crSh)
+    console.log('Array após shift: ', cores)
+
 }
+   
 
 
 

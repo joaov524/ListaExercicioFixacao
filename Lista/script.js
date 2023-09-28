@@ -1,8 +1,5 @@
 function olaMundo(){
     alert("Olá mundo!")
-
-
-
 }
 
 function mostraNome(){
@@ -93,11 +90,11 @@ function manipulaArrays(){
     var cores = [ "branco", "azul", "vermelho", "verde", "preto", "amarelo", "marrom", "violeta", "rosa", "ciano", "magenta", "cinza" ]
     cores.push("laranja")
     console.log(cores)
-    let crRm = cores.pop()
-    console.log('Elemento removido: ', crRm)
+    let rem = cores.pop()
+    console.log('Elemento removido: ', rem)
     console.log('Array: ', cores)
-    let orAr = cores.sort()
-    console.log('Array organizado: ', orAr)
+    let org = cores.sort()
+    console.log('Array organizado: ', org)
     let rmAz = cores.splice(cores.indexOf("azul"), 1)
     console.log('Array sem azul: ', cores)
     console.log('Primeiro valor do array:', cores[0])
